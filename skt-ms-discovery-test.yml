@@ -1,0 +1,13 @@
+server: 
+  port: 8707
+spring:
+  application:
+    name: skt-ms-discovery
+
+eureka:
+  config:
+    import: optional:file:.env[.properties]
+  client:
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: ${EUREKA_URL}
