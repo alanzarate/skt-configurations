@@ -1,0 +1,11 @@
+server:
+  port: 7791
+spring:
+  application:
+    name: skt-ms-tester
+
+eureka:
+  client:
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://192.168.100.207:8707/eureka/
